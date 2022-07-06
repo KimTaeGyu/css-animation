@@ -1,0 +1,57 @@
+body{
+    margin :0px;
+    height: 2000px;
+}
+
+section{
+    background:url("https://www.starbucks.co.kr/common/img/main/fav_prod_bg_new.jpg") fixed;
+    height: 800px;
+}
+/*
+    이미지를 고정 시키려면 fixed라는 명령어를 이용함 ->url"asdas" fixed 이런식으로 표현
+    그럼 스크롤을 내려도 같이 안내려가고 이미지가 고정되어있음
+*/
+
+.photo{
+    position: absolute;
+    top:100px;
+    right: 150px;
+}
+
+h1{
+    font-size: 6em;
+    width: 258px;
+    color:white;
+    font-family: sans-serif;
+    position: absolute;
+    top:80px;
+    left:250px;
+    animation: slide 1s ease-out;
+}
+
+
+/*
+ @keyframes라는 명령어를 이용해 애니메이션 효과를 줄수있다
+ opacity 투명도를 뜻하며 opacity 0 은 투명 1은 불투명이다
+*/
+@keyframes slide {
+    from{
+        left:-100px;
+        opacity: 0;
+    }
+    to{
+        left:250px;
+        opacity: 1;
+    }
+}
+
+@keyframes disapper {
+    from{
+        left:250px;
+        opacity: 1;
+    }
+    to{
+        left:-100px;
+        opacity: 0;
+    }
+}
