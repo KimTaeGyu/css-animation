@@ -15,3 +15,5 @@ window.addEventListener('scroll',function(){
 //addEventListener('event',(function))으로 정의한다
 
 //20220706 css스타일 애니메이션효과 공부
+
+//https://golden-frangollo-4c55d3.netlify.app/
